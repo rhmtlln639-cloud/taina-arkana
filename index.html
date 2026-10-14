@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Индивидуальный разбор Матрицы судьбы по дате рождения от TAINA.ARKANA. Самопознание, сильные стороны и жизненные сценарии.">
+  <title>TAINA.ARKANA — индивидуальный разбор Матрицы судьбы</title>
+  <style>
+    :root {
+      --paper: #f8f7f2;
+      --white: #fffefa;
+      --ink: #292d28;
+      --muted: #70756b;
+      --sage: #53664f;
+      --sage-dark: #3f503c;
+      --sage-pale: #e7ebdf;
+      --line: #e4e4da;
+      --sand: #eee8dc;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(248,247,242,.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(228,228,218,.8); }
+    .nav { display: flex; justify-content: space-between; align-items: center; min-height: 76px; gap: 24px; }
+    .brand { text-decoration: none; letter-spacing: .16em; font-size: 14px; font-weight: 700; }
+    .brand small { display: block; color: var(--muted); letter-spacing: .22em; font-size: 9px; margin-top: 2px; font-weight: 500; }
+    .navlinks { display: flex; align-items: center; gap: 26px; font-size: 13px; color: var(--muted); }
+    .navlinks a { text-decoration: none; }
+    .navlinks a:hover { color: var(--sage); }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 9px; border: 1px solid var(--sage); background: var(--sage); color: white; padding: 13px 19px; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: 600; cursor: pointer; transition: .2s ease; }
+    .btn:hover { background: var(--sage-dark); border-color: var(--sage-dark); transform: translateY(-1px); }
+    .btn.secondary { background: transparent; color: var(--sage); }
+    .btn.secondary:hover { background: var(--sage-pale); }
+    .hero { padding: 76px 0 68px; }
+    .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 62px; align-items: center; }
+    .eyebrow { display: flex; align-items: center; gap: 11px; color: var(--sage); font-size: 11px; letter-spacing: .17em; text-transform: uppercase; font-weight: 700; }
+    .eyebrow:before { content: ""; width: 27px; height: 1px; background: var(--sage); }
+    h1, h2, h3 { font-weight: 400; line-height: 1.12; }
+    h1 { font-family: var(--serif); font-size: clamp(42px, 5.7vw, 72px); letter-spacing: -.035em; margin: 22px 0; max-width: 650px; }
+    h1 em { color: var(--sage); font-weight: 400; }
+    .lead { color: var(--muted); max-width: 520px; font-size: 16px; line-height: 1.85; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 29px; }
+    .micro { color: var(--muted); font-size: 12px; margin-top: 17px; }
+    .visual { min-height: 450px; position: relative; background: var(--sage-pale); border-radius: 48% 48% 5px 5px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .visual:before, .visual:after { content: ""; position: absolute; border: 1px solid rgba(83,102,79,.35); border-radius: 50%; width: 330px; height: 330px; }
+    .visual:after { width: 250px; height: 250px; }
+    .orbit { position: absolute; width: 390px; height: 190px; border: 1px solid rgba(83,102,79,.3); border-radius: 50%; transform: rotate(-32deg); }
+    .sun { width: 130px; height: 130px; border: 1px solid var(--sage); border-radius: 50%; display: grid; place-items: center; color: var(--sage); font-family: var(--serif); font-size: 40px; background: rgba(255,254,250,.45); z-index: 1; }
+    .spark { position: absolute; color: var(--sage); font-size: 22px; }
+    .spark.one { top: 18%; right: 23%; } .spark.two { bottom: 20%; left: 20%; font-size: 16px; } .spark.three { top: 33%; left: 16%; font-size: 12px; }
+    .visual-note { position: absolute; bottom: 23px; left: 24px; right: 24px; text-align: center; font-family: var(--serif); font-size: 20px; color: var(--sage-dark); }
+    section { padding: 76px 0; }
+    .section-head { max-width: 620px; margin-bottom: 34px; }
+    .section-head h2 { font-family: var(--serif); font-size: clamp(34px, 4vw, 48px); margin: 15px 0; letter-spacing: -.025em; }
+    .section-head p { color: var(--muted); margin: 0; max-width: 580px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { padding: 27px; border: 1px solid var(--line); background: var(--white); min-height: 210px; }
+    .card .num { color: var(--sage); font-family: var(--serif); font-size: 28px; }
+    .card h3 { font-family: var(--serif); font-size: 24px; margin: 20px 0 10px; }
+    .card p { color: var(--muted); font-size: 14px; margin: 0; }
+    .about { background: #f0eee6; }
+    .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: start; }
+    .quote { border-left: 2px solid var(--sage); padding: 7px 0 7px 23px; font-family: var(--serif); font-size: 27px; line-height: 1.4; }
+    .about-copy p { color: var(--muted); margin-top: 0; }
+    .steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .step { border-top: 1px solid var(--line); padding-top: 19px; }
+    .step .num { color: var(--sage); font-size: 11px; letter-spacing: .12em; }
+    .step h3 { font-family: var(--serif); font-size: 21px; margin: 11px 0 8px; }
+    .step p { font-size: 13px; color: var(--muted); margin: 0; }
+    .offer { background: var(--sage); color: #fffefa; }
+    .offer-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center; }
+    .offer .eyebrow { color: #dfe6d8; } .offer .eyebrow:before { background: #dfe6d8; }
+    .offer h2 { font-family: var(--serif); font-size: clamp(36px,4vw,51px); margin: 18px 0; }
+    .offer p { color: #e0e5dc; max-width: 540px; }
+    .price-card { background: var(--white); color: var(--ink); padding: 30px; border-radius: 5px; }
+    .price-label { color: var(--muted); font-size: 12px; }
+    .price { font-family: var(--serif); font-size: 42px; margin: 5px 0 12px; }
+    .price-card ul { padding-left: 18px; color: var(--muted); font-size: 13px; }
+    .price-card li { margin: 7px 0; }
+    .price-card .btn { width: 100%; margin-top: 10px; }
+    .faq { max-width: 800px; }
+    details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+    summary { cursor: pointer; list-style: none; font-family: var(--serif); font-size: 21px; display: flex; justify-content: space-between; gap: 18px; }
+    summary::-webkit-details-marker { display:none; }
+    summary:after { content: "+"; color: var(--sage); font-family: var(--sans); }
+    details[open] summary:after { content: "−"; }
+    details p { color: var(--muted); font-size: 14px; max-width: 680px; }
+    .final-cta { text-align: center; background: var(--sand); padding: 65px 20px; }
+    .final-cta h2 { font-family: var(--serif); font-size: clamp(34px,4vw,48px); margin: 13px auto; max-width: 650px; }
+    .final-cta p { color: var(--muted); max-width: 550px; margin: 0 auto 24px; }
+    footer { padding: 26px 0; font-size: 12px; color: var(--muted); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .disclaimer { max-width: 720px; line-height: 1.6; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 30px, 560px); }
+      .nav { min-height: 66px; } .navlinks { display: none; }
+      .nav .btn { padding: 10px 12px; font-size: 12px; }
+      .hero { padding: 48px 0 45px; }
+      .hero-grid, .about-grid, .offer-grid { grid-template-columns: 1fr; gap: 34px; }
+      .visual { min-height: 330px; }
+      .visual:before { width: 260px; height: 260px; } .visual:after { width: 200px; height: 200px; }
+      .orbit { width: 300px; height: 150px; }
+      section { padding: 55px 0; }
+      .cards { grid-template-columns: 1fr; }
+      .card { min-height: auto; }
+      .steps { grid-template-columns: 1fr 1fr; gap: 25px 16px; }
+      .quote { font-size: 24px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *:before, *:after { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">TAINA.ARKANA<small>МАТРИЦА СУДЬБЫ</small></a>
+      <nav class="navlinks" aria-label="Основная навигация">
+        <a href="#about">О методе</a><a href="#process">Как проходит</a><a href="#price">Стоимость</a><a href="#faq">Вопросы</a>
+      </nav>
+      <a class="btn" href="#price">Записаться ↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Самопознание без сложных слов</div>
+          <h1>Узнай себя <em>чуть глубже.</em></h1>
+          <p class="lead">Индивидуальный разбор Матрицы судьбы по дате рождения — чтобы по-новому взглянуть на свои сильные стороны, привычные сценарии и то, что для тебя действительно важно.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#price">Выбрать разбор <span aria-hidden="true">↗</span></a>
+            <a class="btn secondary" href="#process">Как всё проходит</a>
+          </div>
+          <p class="micro">Личный разбор · Бережный подход · Без готовых ярлыков</p>
+        </div>
+        <div class="visual" aria-label="Минималистичная композиция из кругов и звёзд">
+          <div class="orbit"></div><div class="sun">✧</div>
+          <span class="spark one">✳</span><span class="spark two">✧</span><span class="spark three">✦</span>
+          <div class="visual-note">Твоя история — не шаблон</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">О разборе</div>
+          <h2>Не предсказание, а повод лучше понять себя.</h2>
+          <p>Матрица судьбы используется здесь как символический инструмент для размышления. Мы рассматриваем темы, которые откликаются именно тебе, и переводим их в понятные вопросы для жизни.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="num">01</div><h3>Сильные стороны</h3><p>Что помогает тебе действовать, принимать решения и опираться на себя.</p></article>
+          <article class="card"><div class="num">02</div><h3>Деньги и реализация</h3><p>Какие установки и привычки стоит исследовать в теме работы, целей и ресурсов.</p></article>
+          <article class="card"><div class="num">03</div><h3>Отношения и сценарии</h3><p>Какие повторяющиеся реакции можно заметить и какие новые варианты поведения попробовать.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap about-grid">
+        <div class="quote">«Не нужно подгонять себя под трактовку. Важно найти то, что помогает тебе лучше себя понять».</div>
+        <div class="about-copy">
+          <div class="eyebrow">Мой подход</div>
+          <h2 style="font-family:var(--serif);font-size:clamp(32px,4vw,44px);margin:15px 0 20px">Бережно, понятно, без категоричных выводов.</h2>
+          <p>Я объясняю значения простым языком и помогаю связать их с твоими вопросами. Ты можешь соглашаться, задавать вопросы и не принимать то, что тебе не подходит.</p>
+          <p>Разбор не определяет твоё будущее и не заменяет профессиональную помощь в вопросах здоровья, финансов или психологического состояния. Это пространство для саморефлексии и новых точек зрения.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Как проходит</div>
+          <h2>Четыре простых шага</h2>
+          <p>Ты заранее знаешь, что будет происходить и что получишь в результате.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="num">ШАГ 01</div><h3>Заявка</h3><p>Пишешь мне в Telegram и рассказываешь, какая тема тебя интересует.</p></div>
+          <div class="step"><div class="num">ШАГ 02</div><h3>Дата рождения</h3><p>Присылаешь дату рождения и уточняешь свой запрос.</p></div>
+          <div class="step"><div class="num">ШАГ 03</div><h3>Разбор</h3><p>Я готовлю индивидуальную интерпретацию по выбранной теме.</p></div>
+          <div class="step"><div class="num">ШАГ 04</div><h3>Итоги</h3><p>Получаешь разбор и идеи для дальнейшей самостоятельной работы.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="offer">
+      <div class="wrap offer-grid">
+        <div>
+          <div class="eyebrow">Индивидуальная работа</div>
+          <h2>Разбор, который начинается с твоего запроса.</h2>
+          <p>Не универсальная расшифровка для всех, а внимание к твоей дате рождения и теме, которую хочется исследовать.</p>
+          <p>Напиши мне — обсудим запрос, подходящий формат и итоговую стоимость до начала работы.</p>
+        </div>
+        <div class="price-card">
+          <div class="price-label">Стоимость индивидуального разбора</div>
+          <div class="price">1 500–3 000 ₽</div>
+          <p style="color:var(--muted);font-size:13px">Итоговая цена зависит от объёма и выбранной темы. Стоимость согласовывается заранее.</p>
+          <ul>
+            <li>Разбор по дате рождения</li>
+            <li>Фокус на интересующей тебя теме</li>
+            <li>Понятные объяснения без сложных терминов</li>
+            <li>Рекомендации для самостоятельной рефлексии</li>
+          </ul>
+          <a class="btn" data-telegram href="#contact">Обсудить разбор в Telegram ↗</a>
+          <p style="font-size:11px;margin:12px 0 0;color:var(--muted)">Без оплаты на этой странице. Сначала обсудим детали.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Частые вопросы</div>
+          <h2>Перед тем как записаться</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Что нужно для разбора?</summary><p>Дата рождения и твой запрос. Если пока не знаешь, какую тему выбрать, можно начать с короткого сообщения о том, что сейчас волнует.</p></details>
+          <details><summary>Можно ли задать конкретный вопрос?</summary><p>Да. Например, о самореализации, отношениях или привычных жизненных сценариях. Мы заранее согласуем границы и фокус разбора.</p></details>
+          <details><summary>Матрица точно предсказывает будущее?</summary><p>Нет. На сайте Матрица рассматривается как символическая система для самопознания, а не научно подтверждённый способ предсказания событий.</p></details>
+          <details><summary>Как узнать точную стоимость?</summary><p>Напиши в Telegram и опиши свой запрос. До начала работы я сообщу стоимость и формат, чтобы ты могла спокойно принять решение.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact">
+      <div class="eyebrow" style="justify-content:center">Первый шаг</div>
+      <h2>Начни с вопроса, который важен именно тебе.</h2>
+      <p>Напиши мне в Telegram. Обсудим твой запрос и решим, подойдёт ли тебе индивидуальный разбор.</p>
+      <a class="btn" data-telegram href="#contact">Написать в Telegram ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top">TAINA.ARKANA<small>МАТРИЦА СУДЬБЫ</small></a>
+      <div class="disclaimer">Матрица судьбы представлена как эзотерический инструмент саморефлексии, а не научный метод диагностики или предсказания. © <span id="year"></span> TAINA.ARKANA</div>
+    </div>
+  </footer>
+  <script>
+    // Перед публикацией замени значение на свой username в Telegram без символа @.
+    const TELEGRAM_USERNAME = "shangaal";
+    const telegramUrl = TELEGRAM_USERNAME && TELEGRAM_USERNAME !== "YOUR_TELEGRAM_USERNAME"
+      ? "https://t.me/" + TELEGRAM_USERNAME
+      : "";
+    document.querySelectorAll("[data-telegram]").forEach(link => {
+      if (telegramUrl) {
+        link.href = telegramUrl;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      } else {
+        link.addEventListener("click", event => {
+          event.preventDefault();
+          alert("Чтобы включить запись, открой файл index.html и замени YOUR_TELEGRAM_USERNAME на свой username в Telegram.");
+        });
+      }
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
